@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_info_24dp"
+            android:title="About Us"
+            />
+        <item
+            android:id="@+id/Academics"
+            android:icon="@drawable/ic_academics_24dp"
+            android:title="Academics"/>
+        <item
+            android:id="@+id/Staff"
+            android:icon="@drawable/ic_staff_24dp"
+            android:title="Staff"/>
+        <item
+            android:id="@+id/Campus"
+            android:icon="@drawable/ic_campus_24dp"
+            android:title="Campus"/>
+        <item
+            android:id="@+id/Admission"
+            android:icon="@drawable/ic_admission_24dp"
+            android:title="Admission"/>
+        <item
+            android:id="@+id/RePub"
+            android:icon="@drawable/ic_research_and_development_24dp"
+            android:title="Research And Publication"/>
+        <item
+            android:id="@+id/Sports"
+            android:icon="@drawable/ic_sports_24dp"
+            android:title="Sports"/>
+        <item
+            android:id="@+id/IQAC"
+            android:icon="@drawable/ic_iqac_24dp"
+            android:title="IQAC"/>
+        <item
+            android:id="@+id/Alumni"
+            android:icon="@drawable/ic_alumini_24dp"
+            android:title="Alumni"/>
+    </group>
+
+    <item android:title="Comminication">
+        <menu>
+            <item
+                android:id="@+id/Contact_us"
+                android:icon="@drawable/ic_contact_24dp"
+                android:title="Contact Us"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+    android:id="@+id/Account_Details_Header">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="75dp"
+        android:layout_height="75dp" >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dastageer Sayed"
+        android:textColor="@color/color_title"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dastageersayed99@gmail.com"
+        android:textColor="@color/color_title"></TextView>
+
+</LinearLayout>
