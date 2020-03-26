@@ -17,6 +17,13 @@
         <item name="fontFamily">@font/aladin</item>
     </style>
 
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_layout_stroke</item>
+    </style>
 
+    <style name="MyHintStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:textSize">12dp</item>
+    </style>
 
 </resources>

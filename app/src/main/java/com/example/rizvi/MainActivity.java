@@ -7,6 +7,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ClipData;
 import android.content.Intent;
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private ViewFlipper v_flipper;
+    private List<NoticesModel> noticesModelList;
+    private RecyclerView noticesRecyclerView;
+    private NoticesAdapter noticesAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,18 @@ public class MainActivity extends AppCompatActivity {
         for (int image : images) {
             flipperImage(image);
         }
+
+        // Notices
+        noticesModelList = new ArrayList<>();
+        noticesModelList.add(new NoticesModel("Hello"));
+        noticesModelList.add(new NoticesModel("Hello1"));
+        noticesModelList.add(new NoticesModel("Hello2"));
+        noticesModelList.add(new NoticesModel("Hello3"));
+
+        noticesRecyclerView = (RecyclerView) findViewById(R.id.recyclerViewNotices);
+        noticesAdapter = new NoticesAdapter(this, noticesModelList);
+        noticesRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        noticesRecyclerView.setAdapter(noticesAdapter);
 
 
     }
@@ -97,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_iqac);
                 break;
             case R.id.Alumni:
-                Intent intent_alumni = new Intent(MainActivity.this, Alumni.class);
+                Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);
                 startActivity(intent_alumni);
                 break;
         }
