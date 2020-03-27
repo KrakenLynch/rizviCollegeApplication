@@ -1,48 +1,40 @@
 package com.example.rizvi;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import models.GridItem;
-import models.ListItem;
+import Lists.DegreeList;
+import Lists.JuniorList;
 
 public class Academics extends AppCompatActivity {
-
-//    List<button> Button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_academics);
 
-//        Button = new ArrayList<>();
-//        Button.add(new button("Junior College", "", "", 0));
-//        Button.add(new button("Degree College", "", "", 0));
-//        Button.add(new button("Master College", "", "", 0));
-//        Button.add(new button("Doctorate of Philosophy", "", "", 0));
-//        Button.add(new button("Certificate Courses", "", "", 0));
-//        Button.add(new button("Collaboration", "", "", 0));
+        final Button JCbutton = (Button) findViewById(R.id.JC_btn);
+        final Button DGbutton = (Button) findViewById(R.id.Degree_btn);
 
-        List<GridItem> gridItems;
-        List<ListItem> academicsList = new ArrayList<>();
-        academicsList.add(new ListItem("Science",""));
-        academicsList.add(new ListItem("Commerce",""));
-        academicsList.add(new ListItem("Arts",""));
+        JCbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent JCIntent = new Intent(Academics.this, JuniorList.class);
+                Academics.this.startActivity(JCIntent);
+            }
+        });
 
-        gridItems = new ArrayList<>();
-        gridItems.add(new GridItem("Junior College", academicsList));
+        DGbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent DGIntent = new Intent(Academics.this, DegreeList.class);
+                Academics.this.startActivity(DGIntent);
+            }
+        });
 
-
-        RecyclerView myrv = (RecyclerView) findViewById(R.id.Academics_recyclerview);
-        CustomAdapter myAdapter = new CustomAdapter(this, gridItems);
-        myrv.setLayoutManager(new GridLayoutManager(this, 2));
-        myrv.setAdapter(myAdapter);
     }
 }

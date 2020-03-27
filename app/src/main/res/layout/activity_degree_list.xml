@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Lists.DegreeList">
+
+    <TextView
+        android:id="@+id/txt_Aided"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aided"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/color_title"/>
+
+    <Button
+        android:id="@+id/Dg_BA_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Aided"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.A"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BCom_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BA_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.Com"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BSc_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BCom_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.Sc"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/txt_UnAided"
+        android:layout_below="@id/Dg_BSc_list"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnAided"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/color_title"/>
+
+    <Button
+        android:id="@+id/Dg_BMS_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_UnAided"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.M.S"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BMM_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BMS_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.M.M"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BBI_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BMM_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.B.I"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BAF_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BBI_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="B.A.F"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BSc.IT_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BAF_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="BSc.IT"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/Dg_BSc.CS_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dg_BSc.IT_list"
+        android:background="@drawable/rounded_list_btn"
+        android:text="BSc.CS"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+
+
+
+
+
+</RelativeLayout>

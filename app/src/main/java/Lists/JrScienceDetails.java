@@ -1,16 +1,16 @@
-package com.example.rizvi;
+package Lists;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Junior_College extends AppCompatActivity {
+import com.example.rizvi.R;
 
-    String items[] = new String[] {};
+public class JrScienceDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_junior__college);
+        setContentView(R.layout.activity_jr_science_details);
     }
 }

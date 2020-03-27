@@ -86,33 +86,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.Academics:
-                Intent intent_acad = new Intent(MainActivity.this, Academics.class);
-                startActivity(intent_acad);
+                Intent Acd_intent = new Intent(MainActivity.this, Academics.class);
+                startActivity(Acd_intent);
                 break;
-            case R.id.Staff:
-                Intent intent_staff = new Intent(MainActivity.this, Staff.class);
-                startActivity(intent_staff);
-                break;
-            case R.id.Campus:
-                Intent intent_camp = new Intent(MainActivity.this, Campus_Life.class);
-                startActivity(intent_camp);
-                break;
-            case R.id.Admission:
-                Intent intent_Add = new Intent(MainActivity.this, Admission.class);
-                startActivity(intent_Add);
-                break;
-            case R.id.RePub:
-                Intent intent_repub = new Intent(MainActivity.this, R_and_P.class);
-                startActivity(intent_repub);
-                break;
-            case R.id.Sports:
-                Intent intent_sports = new Intent(MainActivity.this, Sports.class);
-                startActivity(intent_sports);
-                break;
-            case R.id.IQAC:
-                Intent intent_iqac = new Intent(MainActivity.this, IQAC.class);
-                startActivity(intent_iqac);
-                break;
+
             case R.id.Alumni:
                 Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);
                 startActivity(intent_alumni);

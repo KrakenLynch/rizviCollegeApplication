@@ -20,7 +20,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/image_card"
                 android:layout_width="match_parent"
-                android:layout_height="239dp"
+                android:layout_height="252dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
@@ -35,7 +35,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/notice_card"
                 android:layout_width="match_parent"
-                android:layout_height="239dp"
+                android:layout_height="252dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
@@ -66,7 +66,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/events_card"
                 android:layout_width="match_parent"
-                android:layout_height="239dp"
+                android:layout_height="252dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
@@ -79,13 +79,7 @@
                 android:layout_margin="16dp"
                 android:src="@drawable/ic_chat_black_24dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/windowBackground"
-                app:itemIconTint="@color/color_title"
-                app:itemTextColor="@color/color_title"
-                app:menu="@menu/bottom_navigation" />
+
 
 
         </LinearLayout>
