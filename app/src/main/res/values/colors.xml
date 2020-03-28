@@ -5,7 +5,14 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="color_title">#000000</color>
     <color name="Orange">#F13005</color>
+    <color name="Orange_Brown">#F8C471</color>
     <color name="Yellow">#FFF200</color>
+    <color name="Aqua"> #48C9B0</color>
+    <color name="Reddish">#E74C3C</color>
+    <color name="Violet">#BB8FCE</color>
+    <color name="SeaGreen"> #58D68D </color>
+    <color name="DeepRed">#641E16</color>
+    <color name="DarkGreen">#0E6655</color>
     <color name="Blue">#0f52ba</color>
     <color name="Grey">#B5B5B5</color>
     <color name="white">#FFFFFF</color>

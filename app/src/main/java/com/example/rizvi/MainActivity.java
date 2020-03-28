@@ -89,6 +89,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent Acd_intent = new Intent(MainActivity.this, Academics.class);
                 startActivity(Acd_intent);
                 break;
+            case R.id.Staff:
+                Intent Staff_intent = new Intent(MainActivity.this, Staff.class);
+                startActivity(Staff_intent);
+                break;
+            case R.id.Campus:
+                Intent Cam_intent = new Intent(MainActivity.this, CampusLife.class);
+                startActivity(Cam_intent);
+                break;
+
 
             case R.id.Alumni:
                 Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);
