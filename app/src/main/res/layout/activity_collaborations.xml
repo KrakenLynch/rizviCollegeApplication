@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Lists.Collaborations"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/Coll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Collaborations_title"
+        android:textAlignment="center"
+        android:textColor="@color/color_title"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/Coll_title"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/Coll_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/Collaborations"
+
+        android:textColor="@color/color_title"
+        android:textSize="18dp"/>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

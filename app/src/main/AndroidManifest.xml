@@ -14,7 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="Lists.DegreeList"></activity>
+        <activity android:name="Lists.Collaborations"></activity>
+        <activity android:name="Lists.CertificateCDetails" />
+        <activity android:name="Lists.DpBotDetais" />
+        <activity android:name="Lists.DpComDetails" />
+        <activity android:name="Lists.DpZoolDetails" />
+        <activity android:name="Lists.DpChemDetails" />
+        <activity android:name="Lists.DopList" />
+        <activity android:name="Lists.MScDetails" />
+        <activity android:name="Lists.MasterList" />
+        <activity android:name="Lists.DegreeList" />
         <activity android:name="Lists.JrMcvcDetails" />
         <activity android:name="Lists.JrCommerceDetails" />
         <activity android:name="Lists.JrScienceDetails" />

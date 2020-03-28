@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="Lists.DpComDetails">
+
+    <TextView
+        android:id="@+id/DP_Chem_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/color_title"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Rizvi college of Arts, Science and Commerce offers Programme of Ph D. of University of Mumbai in the area of Commerce" />
+
+    <TextView
+        android:id="@+id/Dp_Chem_Details_Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textSize="18dp"
+        android:layout_below="@id/DP_Chem_title"
+        android:textColor="@color/color_title"
+        android:textAlignment="center"
+        android:text="The course structure, eligibility and selection criteria is as per University of Mumbai norms.
+
+\n\nThe coaching for course work and the doctoral thesis work is done at the Institute under the able guidance of the Ph.D. by Research guide Dr. Ashfaq Khan. The Institute offers excellent research facilities in terms of statistical packages, online databases, online journals, etc.
+
+\n\nThe current details of the Ph.D. program are as given below:-"/>
+
+    <HorizontalScrollView
+        android:layout_below="@id/Dp_Chem_Details_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/dp_com_details_table"
+            />
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

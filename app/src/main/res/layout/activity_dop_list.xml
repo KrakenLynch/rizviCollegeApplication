@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Lists.DopList">
+
+    <Button
+        android:id="@+id/DP_Chem_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="Chemistry"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/DP_Zool_list"
+        android:layout_below="@id/DP_Chem_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="Zoology"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/DP_Com_list"
+        android:layout_below="@id/DP_Zool_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="Commerce"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/DP_Bot_list"
+        android:layout_below="@id/DP_Com_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="Botany"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+
+
+</RelativeLayout>
