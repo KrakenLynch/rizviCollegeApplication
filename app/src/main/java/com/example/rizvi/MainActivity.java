@@ -3,25 +3,24 @@ package com.example.rizvi;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Adapters.NoticesAdapter;
+import Models.NoticesModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -79,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         v_flipper.setOutAnimation(this, android.R.anim.slide_out_right);
     }
 
+    // Navigation Drawer
     public void selectItemSelect(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.about_us:
@@ -97,8 +97,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent Cam_intent = new Intent(MainActivity.this, CampusLife.class);
                 startActivity(Cam_intent);
                 break;
-
-
             case R.id.Alumni:
                 Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);
                 startActivity(intent_alumni);
@@ -124,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
 
 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context="Campus.Marathon2020">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/MPhotos_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Marathon Photos 2020"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:id="@+id/HYL_Image1"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_below="@id/MPhotos_btn"
+                android:layout_marginTop="20sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hyl_image1" />
+
+            <ImageView
+                android:id="@+id/HYL_Image2"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_below="@id/HYL_Image1"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hyl_image2" />
+
+            <ImageView
+                android:id="@+id/HYL_Image3"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_below="@id/HYL_Image2"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hyl_image3" />
+
+            <ImageView
+                android:id="@+id/HYL_Image4"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_below="@id/HYL_Image3"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hyl_image4" />
+
+            <Button
+                android:id="@+id/Marathon_RegisterLink_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/HYL_Image4"
+                android:background="@drawable/rounded_button"
+                android:text="Register Link for Marathon 2020"
+                android:textAllCaps="false" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

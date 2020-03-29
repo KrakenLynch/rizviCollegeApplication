@@ -45,19 +45,20 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@+id/recyclerViewNotices"
-                    android:text="Notices"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:layout_marginBottom="10dp"/>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerViewNotices"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/recyclerViewNotices"
+                        android:layout_marginBottom="10dp"
+                        android:text="Notices"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewNotices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true" />
 
                 </RelativeLayout>
 
@@ -70,16 +71,17 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                app:cardCornerRadius="10dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="10dp">
+
+            </androidx.cardview.widget.CardView>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/chat_floating_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_chat_black_24dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-
+                android:src="@drawable/ic_chat_black_24dp"/>
 
 
         </LinearLayout>
@@ -98,5 +100,6 @@
         app:menu="@menu/drawer_menu">
 
     </com.google.android.material.navigation.NavigationView>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

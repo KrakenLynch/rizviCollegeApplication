@@ -1,4 +1,4 @@
-package com.example.rizvi;
+package Models;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.rizvi.R;
 
 public class Description_activity extends AppCompatActivity {
 

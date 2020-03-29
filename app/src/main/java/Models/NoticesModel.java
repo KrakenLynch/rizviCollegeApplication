@@ -1,4 +1,4 @@
-package com.example.rizvi;
+package Models;
 
 public class NoticesModel {
 

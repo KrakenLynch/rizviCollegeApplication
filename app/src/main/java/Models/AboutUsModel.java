@@ -1,13 +1,13 @@
-package com.example.rizvi;
+package Models;
 
-public class button {
+public class AboutUsModel {
 
     private String Title;
     private String Category;
     private String Description;
     private int Thumbnail;
 
-    public button(String title, String category, String description, int thumbnail) {
+    public AboutUsModel(String title, String category, String description, int thumbnail) {
 
         Title = title;
         Category = category;
