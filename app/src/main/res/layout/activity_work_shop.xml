@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Campus.WorkShop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/Work_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Chemistry Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Accountancy Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Botany Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn3"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Business Economics Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn4"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Business Law Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn5"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Department of Commerce"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn6"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Economics Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn7"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="English Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn8"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="E.V.S Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn9"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Foundation Course Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn10"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Mathematics Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn11"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Philosophy Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn12"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Physics Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn13"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Sociology Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn14"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_list_btn"
+                android:text="Urdu Department"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Work_btn16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Work_btn15"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:text="Zoology Department"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

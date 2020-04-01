@@ -14,7 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Mphotos"></activity>
+        <activity android:name="Campus.WorkShop"></activity>
+        <activity android:name="Campus.HallOfFame" />
+        <activity android:name="Campus.Assocation" />
+        <activity android:name="Campus.JashneRizvi" />
+        <activity android:name="Campus.Ncc" />
+        <activity android:name="Campus.Mphotos" />
         <activity android:name="Campus.Marathon2020" />
         <activity android:name="Campus.Infrastructure" />
         <activity android:name="Campus.Convocation2020" />

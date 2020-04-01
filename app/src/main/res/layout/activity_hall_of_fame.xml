@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="Campus.HallOfFame">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/hof_image1"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image1"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image2"
+                android:layout_below="@id/hof_image1"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image2"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image3"
+                android:layout_below="@id/hof_image2"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image3"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image4"
+                android:layout_below="@id/hof_image3"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image4"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image5"
+                android:layout_below="@id/hof_image4"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image5"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image6"
+                android:layout_below="@id/hof_image5"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image6"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image7"
+                android:layout_below="@id/hof_image6"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image7"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image8"
+                android:layout_below="@id/hof_image7"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image8"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image9"
+                android:layout_below="@id/hof_image8"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image9"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image10"
+                android:layout_below="@id/hof_image9"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image10"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/hof_image11"
+                android:layout_below="@id/hof_image10"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:src="@drawable/hof_image11"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
