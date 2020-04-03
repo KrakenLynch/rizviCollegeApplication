@@ -98,8 +98,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Cam_intent);
                 break;
             case R.id.Admission:
-                Intent Admi_alumni = new Intent(MainActivity.this, Admission.class);
-                startActivity(Admi_alumni);
+                Intent Admi_Intent = new Intent(MainActivity.this, Admission.class);
+                startActivity(Admi_Intent);
+                break;
+            case R.id.RePub:
+                Intent RP_Intent = new Intent(MainActivity.this, ResearchAndPublication.class);
+                startActivity(RP_Intent);
                 break;
             case R.id.Alumni:
                 Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);

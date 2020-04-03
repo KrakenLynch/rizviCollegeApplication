@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context="Lists.ResearchPubDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="“Publications in Peer Reviewed Journals”"
+        android:textColor="@color/DeepRed"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:text="A total of 118 (national / international) papers were published by faculty and students in peer reviewed journals."
+        android:textColor="@color/color_title"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/RP_Link1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to download complete list."
+        android:textSize="22dp"
+        android:textColor="@color/Blue"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="“Publications in Full Conference Proceedings”"
+        android:textColor="@color/DeepRed"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:text="A total of 59 papers were presented by faculties in full conferences proceedings (National / International)."
+        android:textColor="@color/color_title"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/RP_Link2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to download complete list."
+        android:textSize="22dp"
+        android:textColor="@color/Blue"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="“Papers presented in Seminars / Conferences”"
+        android:textColor="@color/DeepRed"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:text="A total of 97 papers were presented by faculties in Seminars / Conferences (National / International)."
+        android:textColor="@color/color_title"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/RP_Link3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to download complete list."
+        android:textSize="22dp"
+        android:textColor="@color/Blue"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
