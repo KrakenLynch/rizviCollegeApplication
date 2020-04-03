@@ -105,6 +105,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent RP_Intent = new Intent(MainActivity.this, ResearchAndPublication.class);
                 startActivity(RP_Intent);
                 break;
+            case R.id.Sports:
+                Intent Sports_intent = new Intent(MainActivity.this, Sports.class);
+                startActivity(Sports_intent);
+                break;
+            case R.id.IQAC:
+                Intent IQAC_intent = new Intent(MainActivity.this, IQAC.class);
+                startActivity(IQAC_intent);
+                break;
             case R.id.Alumni:
                 Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);
                 startActivity(intent_alumni);

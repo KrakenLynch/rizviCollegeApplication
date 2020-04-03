@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="Lists.Avishkar"></activity>
+        <activity android:name="Iqac.IqacActivity"></activity>
+        <activity android:name=".IQAC" />
+        <activity android:name=".Sports" />
+        <activity android:name="Lists.Avishkar" />
         <activity android:name="Lists.ResearchCenter" />
         <activity android:name="Lists.ResearchPubDetails" />
         <activity android:name=".ResearchAndPublication" />
