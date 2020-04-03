@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="Lists.SelfProspectous"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/SP_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to fill Online Application form:"
+        android:textColor="@color/color_title"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:id="@+id/SP_Link1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SP_Title"
+        android:layout_marginTop="20dp"
+        android:text="> Admission Notice for Junior College(FYJC)"
+        android:textColor="@color/Blue"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/SP_Link2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SP_Link1"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:textColor="@color/Blue"
+        android:text=">Link for all Classes Online Admission except SYJC"/>
+
+    <TextView
+        android:id="@+id/SP_Link3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SP_Link2"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:textColor="@color/Blue"
+        android:text=">Link for SYJC Junior College Online Admission"/>
+
+    <TextView
+        android:id="@+id/SP_Link4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SP_Link3"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:textColor="@color/Blue"
+        android:text=">Link for all Classes Online Admission except SYJC"/>
+
+</LinearLayout>

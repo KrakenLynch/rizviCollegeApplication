@@ -153,7 +153,7 @@ public class CampusLife extends AppCompatActivity {
         Work_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Work_Intent=new Intent(Intent.ACTION_VIEW,
+                Intent Work_Intent= new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://www.rizvicollege.edu.in/workshop-and-seminar.html"));
                 CampusLife.this.startActivity(Work_Intent);
             }

@@ -12,27 +12,27 @@ import com.example.rizvi.R;
 
 public class WorkShop extends AppCompatActivity {
 
-    final Button button1 = (Button) findViewById(R.id.Work_btn1);
-    final Button button2 = (Button) findViewById(R.id.Work_btn2);
-    final Button button3 = (Button) findViewById(R.id.Work_btn3);
-    final Button button4 = (Button) findViewById(R.id.Work_btn4);
-    final Button button5 = (Button) findViewById(R.id.Work_btn5);
-    final Button button6 = (Button) findViewById(R.id.Work_btn6);
-    final Button button7 = (Button) findViewById(R.id.Work_btn7);
-    final Button button8 = (Button) findViewById(R.id.Work_btn8);
-    final Button button9 = (Button) findViewById(R.id.Work_btn9);
-    final Button button10 = (Button) findViewById(R.id.Work_btn10);
-    final Button button11 = (Button) findViewById(R.id.Work_btn11);
-    final Button button12 = (Button) findViewById(R.id.Work_btn12);
-    final Button button13 = (Button) findViewById(R.id.Work_btn13);
-    final Button button14 = (Button) findViewById(R.id.Work_btn14);
-    final Button button15 = (Button) findViewById(R.id.Work_btn15);
-    final Button button16 = (Button) findViewById(R.id.Work_btn16);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_shop);
+
+        final Button button1 = (Button) findViewById(R.id.Work_btn1);
+        final Button button2 = (Button) findViewById(R.id.Work_btn2);
+        final Button button3 = (Button) findViewById(R.id.Work_btn3);
+        final Button button4 = (Button) findViewById(R.id.Work_btn4);
+        final Button button5 = (Button) findViewById(R.id.Work_btn5);
+        final Button button6 = (Button) findViewById(R.id.Work_btn6);
+        final Button button7 = (Button) findViewById(R.id.Work_btn7);
+        final Button button8 = (Button) findViewById(R.id.Work_btn8);
+        final Button button9 = (Button) findViewById(R.id.Work_btn9);
+        final Button button10 = (Button) findViewById(R.id.Work_btn10);
+        final Button button11 = (Button) findViewById(R.id.Work_btn11);
+        final Button button12 = (Button) findViewById(R.id.Work_btn12);
+        final Button button13 = (Button) findViewById(R.id.Work_btn13);
+        final Button button14 = (Button) findViewById(R.id.Work_btn14);
+        final Button button15 = (Button) findViewById(R.id.Work_btn15);
+        final Button button16 = (Button) findViewById(R.id.Work_btn16);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

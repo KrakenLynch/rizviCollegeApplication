@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="Lists.AdminProspectus">
+
+    <ImageButton
+        android:id="@+id/Main_prospectus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:src="@drawable/prospectus_btn1"
+        android:scaleType="fitXY"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:layout_below="@id/Main_prospectus_btn"
+        android:id="@+id/Self_prospectus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:src="@drawable/prospectus_btn2"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>
