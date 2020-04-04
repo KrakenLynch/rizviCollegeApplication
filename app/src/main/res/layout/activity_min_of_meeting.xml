@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context="Iqac.MinOfMeeting">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MINUTES OF MEETINGS\n\nYEAR 2018-19"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:textColor="@color/DeepRed"/>
+
+    <TextView
+        android:id="@+id/MMLink1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Minutes of Meeting- 2018-19"
+        android:textSize="20dp"
+        android:textColor="@color/Blue"
+        />
+
+    <TextView
+        android:id="@+id/MMLink2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2) Minutes of Meeting- 2018-19"
+        android:textSize="20dp"
+        android:textColor="@color/Blue"
+        />
+    <TextView
+        android:id="@+id/MMLink3"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3) Minutes of Meeting- 2018-19"
+        android:textSize="20dp"
+        android:textColor="@color/Blue"
+        />
+    <TextView
+        android:id="@+id/MMLink4"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4) Minutes of Meeting- 2018-19"
+        android:textSize="20dp"
+        android:textColor="@color/Blue"
+        />
+
+
+
+</LinearLayout>

@@ -9,6 +9,7 @@
     android:id="@+id/Account_Details_Header">
 
     <ImageView
+        android:id="@+id/Profile_Image"
         android:src="@mipmap/ic_launcher_round"
         android:layout_width="75dp"
         android:layout_height="75dp" >

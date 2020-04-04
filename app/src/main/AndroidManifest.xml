@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="Iqac.IqacActivity"></activity>
+        <activity android:name="Iqac.RelevantDocuments"></activity>
+        <activity android:name="Iqac.NAACReport" />
+        <activity android:name="Iqac.MinOfMeeting" />
+        <activity android:name="Iqac.IqacActivity" />
         <activity android:name=".IQAC" />
         <activity android:name=".Sports" />
         <activity android:name="Lists.Avishkar" />

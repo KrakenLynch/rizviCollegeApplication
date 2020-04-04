@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context="Iqac.NAACReport">
+
+    <TextView
+        android:id="@+id/NAAC_Link1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Certificate of Compliance"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2011-12"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link3"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2012-13"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link4"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2013-14"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link5"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2014-15"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link6"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2015-16"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link7"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2016-17"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/NAAC_Link8"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IQAR Report 2017-18"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:background="@drawable/border"
+        />
+
+</LinearLayout>

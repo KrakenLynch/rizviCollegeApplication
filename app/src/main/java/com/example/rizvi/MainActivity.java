@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView myDrawer = (NavigationView) findViewById(R.id.nav_view);
         setupDrawerContent(myDrawer);
+
 
         //Image Flipper
         int images[] = {R.drawable.jashrizvi1, R.drawable.jashrizvi2, R.drawable.jashrizvi3, R.drawable.jashrizvi4,
@@ -114,8 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(IQAC_intent);
                 break;
             case R.id.Alumni:
-                Intent intent_alumni = new Intent(MainActivity.this, SignIn_SignUp.class);
-                startActivity(intent_alumni);
                 break;
         }
 
