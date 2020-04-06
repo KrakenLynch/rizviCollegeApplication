@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".ContactUs">
+
+    <TextView
+        android:id="@+id/Contact_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ContactUs_string"
+        android:textSize="22dp"
+        android:textColor="@color/color_title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Contact_Link"
+        android:textColor="@color/Blue"
+        android:textSize="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info.asc@rizvicollege.edu.in"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:padding="5dp"
+            android:id="@+id/FaceBook_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/facebook"
+            android:background="@null"
+            android:scaleType="fitXY"/>
+        <ImageButton
+            android:id="@+id/Twitter_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/twitter"
+            android:padding="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"/>
+        <ImageButton
+            android:id="@+id/Youtube_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/youtube"
+            android:padding="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"/>
+        <ImageButton
+            android:id="@+id/Instagram_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:background="@null"
+            android:src="@drawable/instagram"/>
+    </LinearLayout>
+
+
+</LinearLayout>

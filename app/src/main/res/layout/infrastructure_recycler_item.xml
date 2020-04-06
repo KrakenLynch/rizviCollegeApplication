@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/Iv_Lable"
             android:layout_centerHorizontal="true"
-            android:text="More Images"
+            android:text="More"
             android:textAllCaps="false" />
 
 

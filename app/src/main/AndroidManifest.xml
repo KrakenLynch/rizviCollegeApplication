@@ -14,7 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="Iqac.RelevantDocuments"></activity>
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name="Lists.AlumniSpeak" />
+        <activity android:name="Lists.FamousAlumni" />
+        <activity android:name="Lists.AlumniGallery" />
+        <activity android:name="Lists.AlumniEvents" />
+        <activity android:name="Lists.AlumniCommitte" />
+        <activity android:name="Lists.AlumniOverview" />
+        <activity android:name=".Alumni" />
+        <activity android:name="Iqac.RelevantDocuments" />
         <activity android:name="Iqac.NAACReport" />
         <activity android:name="Iqac.MinOfMeeting" />
         <activity android:name="Iqac.IqacActivity" />

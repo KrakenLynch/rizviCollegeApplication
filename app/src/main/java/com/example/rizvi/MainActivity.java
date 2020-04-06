@@ -116,6 +116,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(IQAC_intent);
                 break;
             case R.id.Alumni:
+                Intent Alumni_intent = new Intent(MainActivity.this, Alumni.class);
+                startActivity(Alumni_intent);
+                break;
+            case R.id.Contact_us:
+                Intent Cont_intent = new Intent(MainActivity.this, ContactUs.class);
+                startActivity(Cont_intent);
                 break;
         }
 

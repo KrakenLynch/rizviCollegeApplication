@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="Lists.AlumniEvents">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alumni Meet 2018-19"
+                android:textAlignment="center"
+                android:textColor="@color/DeepRed"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/ALEvents_Link1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet 2018-19 Report"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet 2017-18"
+                android:textAlignment="center"
+                android:textColor="@color/DeepRed"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/ALEvents_OctLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet Oct 2017 Report"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ALEvents_MarchLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet March 2018 Report"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet 2016-17"
+                android:textAlignment="center"
+                android:textColor="@color/DeepRed"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ALEvents_String1"
+                android:textColor="@color/color_title"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet 2015-16"
+                android:textAlignment="center"
+                android:textColor="@color/DeepRed"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ALEvents_string2"
+                android:textColor="@color/color_title"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alumni Meet 2014-15"
+                android:textAlignment="center"
+                android:textColor="@color/DeepRed"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ALEvents_String3"
+                android:textColor="@color/color_title"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
