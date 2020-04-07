@@ -75,19 +75,33 @@
 
             </androidx.cardview.widget.CardView>
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/chat_floating_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="16dp"
-                android:src="@drawable/ic_chat_black_24dp"/>
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/chat_floating_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom|end"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:src="@drawable/ic_chat_black_24dp" />-->
 
+            <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+                android:id="@+id/BottomNavigationBar"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:mbn_backgroundBottomColor="@color/white"
+                app:mbn_countBackgroundColor="@color/DeepRed"
+                app:mbn_countTextColor="@color/white"
+                app:mbn_defaultIconColor="@color/color_title"
+                app:mbn_rippleColor="@color/white"
+                app:mbn_selectedIconColor="@color/Orange"
+                app:mbn_shadowColor="#1f212121"
+                />
 
         </LinearLayout>
 
-    </ScrollView>
 
+    </ScrollView>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

@@ -13,8 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -31,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
     private List<NoticesModel> noticesModelList;
     private RecyclerView noticesRecyclerView;
     private NoticesAdapter noticesAdapter;
+    private MeowBottomNavigation meo;
+
+    //bottom_nav
+    private final static int Id_home = 1;
+    private final static int Id_notification = 2;
+    private final static int Id_profile = 3;
+    private final static int Id_chatPanel = 4;
+    private final static int Id_settings = 5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,9 +76,55 @@ public class MainActivity extends AppCompatActivity {
         noticesRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         noticesRecyclerView.setAdapter(noticesAdapter);
 
+        //Bottom Navigation Bar
+        meo = (MeowBottomNavigation) findViewById(R.id.BottomNavigationBar);
+        meo.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home_black_24dp));
+        meo.add(new MeowBottomNavigation.Model(2, R.drawable.ic_notifications_black_24dp));
+        meo.add(new MeowBottomNavigation.Model(3, R.drawable.ic_profile_black_24dp));
+        meo.add(new MeowBottomNavigation.Model(4, R.drawable.ic_chat_black_24dp));
+        meo.add(new MeowBottomNavigation.Model(5, R.drawable.ic_more_horiz_black_24dp));
+
+        meo.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
+            @Override
+            public void onClickItem(MeowBottomNavigation.Model item) {
+                // Toast.makeText(getApplicationContext(),""+item.getId(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        meo.setOnShowListener(new MeowBottomNavigation.ShowListener() {
+            @Override
+            public void onShowItem(MeowBottomNavigation.Model item) {
+                switch (item.getId()) {
+                    case Id_home:
+                        break;
+                    case Id_settings:
+                        Intent setting_intent = new Intent(MainActivity.this, About_us.class);
+                        startActivity(setting_intent);
+                        break;
+                    default:
+
+                }
+            }
+        });
+
+        meo.setOnReselectListener(new MeowBottomNavigation.ReselectListener() {
+            @Override
+            public void onReselectItem(MeowBottomNavigation.Model item) {
+                switch (item.getId()) {
+                    case Id_home:
+                        break;
+                    case Id_settings:
+                        Intent setting_intent = new Intent(MainActivity.this, About_us.class);
+                        startActivity(setting_intent);
+                        break;
+                    default:
+
+                }
+
+            }
+        });
 
     }
-
 
     public void flipperImage(int image) {
         ImageView imageView = new ImageView(this);

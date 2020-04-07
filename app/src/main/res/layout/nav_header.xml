@@ -3,30 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="176dp"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/rizvi_college_campus"
     android:padding="20dp"
+    android:gravity="bottom"
     android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
     android:id="@+id/Account_Details_Header">
 
-    <ImageView
-        android:id="@+id/Profile_Image"
-        android:src="@mipmap/ic_launcher_round"
-        android:layout_width="75dp"
-        android:layout_height="75dp" >
-    </ImageView>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dastageer Sayed"
-        android:textColor="@color/color_title"
-        android:textStyle="bold"
-        >
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dastageersayed99@gmail.com"
-        android:textColor="@color/color_title"></TextView>
+        android:text="Rizvi Education Institute"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

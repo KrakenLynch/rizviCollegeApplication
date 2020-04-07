@@ -61,7 +61,6 @@
         <activity android:name="Lists.JrArtsDetails" />
         <activity android:name="Lists.JuniorList" />
         <activity android:name=".Academics" />
-        <activity android:name=".SignIn_SignUp" />
         <activity android:name="Models.Description_activity" />
         <activity android:name=".About_us" />
         <activity android:name=".MainActivity">
