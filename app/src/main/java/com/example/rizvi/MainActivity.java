@@ -18,6 +18,7 @@ import android.widget.ViewFlipper;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView noticesRecyclerView;
     private NoticesAdapter noticesAdapter;
     private MeowBottomNavigation meo;
+    FirebaseAuth fAuth;
 
     //bottom_nav
     private final static int Id_home = 1;
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fAuth = FirebaseAuth.getInstance();
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
@@ -98,9 +101,15 @@ public class MainActivity extends AppCompatActivity {
                     case Id_home:
                         break;
                     case Id_profile:
-                        Intent Profile_intent = new Intent(MainActivity.this, LoginPage.class);
-                        startActivity(Profile_intent);
-                        break;
+                        if (fAuth.getCurrentUser() != null) {
+                            Intent profile_intent = new Intent(MainActivity.this, ProfileDetails.class);
+                            startActivity(profile_intent);
+                            break;
+                        } else {
+                            Intent profile_intent = new Intent(MainActivity.this, RegisterPage.class);
+                            startActivity(profile_intent);
+                            break;
+                        }
                     case Id_settings:
                         Intent setting_intent = new Intent(MainActivity.this, About_us.class);
                         startActivity(setting_intent);
@@ -119,9 +128,15 @@ public class MainActivity extends AppCompatActivity {
                     case Id_home:
                         break;
                     case Id_profile:
-                        Intent Profile_intent = new Intent(MainActivity.this, LoginPage.class);
-                        startActivity(Profile_intent);
-                        break;
+                        if (fAuth.getCurrentUser() != null) {
+                            Intent profile_intent = new Intent(MainActivity.this, ProfileDetails.class);
+                            startActivity(profile_intent);
+                            break;
+                        } else {
+                            Intent profile_intent = new Intent(MainActivity.this, RegisterPage.class);
+                            startActivity(profile_intent);
+                            break;
+                        }
                     case Id_settings:
                         Intent setting_intent = new Intent(MainActivity.this, About_us.class);
                         startActivity(setting_intent);

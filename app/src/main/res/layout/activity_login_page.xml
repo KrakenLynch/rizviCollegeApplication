@@ -46,7 +46,7 @@
 
         <EditText
             android:layout_marginTop="30dp"
-            android:id="@+id/LoginName_text"
+            android:id="@+id/LoginEmail_text"
             android:layout_width="match_parent"
             android:layout_below="@id/Waves"
             android:layout_height="wrap_content"
@@ -58,9 +58,9 @@
             android:layout_marginRight="35dp"/>
 
         <EditText
-            android:id="@+id/LoginEmail_text"
+            android:id="@+id/LoginPassword_text"
             android:layout_width="match_parent"
-            android:layout_below="@id/LoginName_text"
+            android:layout_below="@id/LoginEmail_text"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:textColor="@color/color_title"
@@ -70,9 +70,18 @@
             android:background="@drawable/edittext_rounded_corner"
             android:layout_marginRight="35dp"/>
 
+        <ProgressBar
+            android:id="@+id/LoginProgessBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LoginEmail_text"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            />
+
         <Button
             android:id="@+id/Login_btn"
-            android:layout_below="@id/LoginEmail_text"
+            android:layout_below="@id/LoginPassword_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/login_rounded_button"
