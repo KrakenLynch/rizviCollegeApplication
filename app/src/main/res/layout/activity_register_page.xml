@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/Screen_orange"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/Orange"/>
+        <View
+            android:id="@+id/Waves"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/Screen_orange"
+            android:background="@drawable/ic_wave"/>
+        <ImageView
+            android:id="@+id/Profile_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/Profile_logo"
+            android:text="Create a Account"
+            android:textSize="35dp"
+            android:padding="10dp"
+
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/LoginName_text"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/LoginName_text"
+            android:layout_width="match_parent"
+            android:layout_below="@id/Waves"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/color_title"
+            android:hint="Enter Name"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/edittext_rounded_corner"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/LoginSurname_text"
+            android:layout_width="match_parent"
+            android:layout_below="@id/LoginName_text"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/color_title"
+            android:hint="Enter Surname"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/edittext_rounded_corner"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/LoginPassword_text"
+            android:layout_width="match_parent"
+            android:layout_below="@id/LoginSurname_text"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/color_title"
+            android:hint="Enter Password"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_rounded_corner"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/LoginConfirmPassword_text"
+            android:layout_width="match_parent"
+            android:layout_below="@id/LoginPassword_text"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/color_title"
+            android:hint="Confirm Password"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_rounded_corner"
+            android:layout_marginRight="35dp"/>
+
+        <Button
+            android:id="@+id/Register_btn"
+            android:layout_below="@id/LoginConfirmPassword_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_rounded_button"
+            android:padding="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/Account_Confirmation_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have a Account..?"
+            android:layout_below="@id/Register_btn"
+            android:textColor="@color/DeepRed"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/Login_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@id/Account_Confirmation_txt"
+            android:textColor="@color/Orange"
+            android:layout_marginTop="3dp"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_wave1"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

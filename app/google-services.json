@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "243728754565",
+    "firebase_url": "https://rizvi-d0e34.firebaseio.com",
+    "project_id": "rizvi-d0e34",
+    "storage_bucket": "rizvi-d0e34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243728754565:android:7bbea20b301207c397c6ec",
+        "android_client_info": {
+          "package_name": "com.example.rizvi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243728754565-gtvr5guuog0gl08n43qntvhkul9hg4fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClu2cYV1KXDK5Q5_9flx8tMqtIbFPYvzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243728754565-gtvr5guuog0gl08n43qntvhkul9hg4fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -97,11 +97,16 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getId()) {
                     case Id_home:
                         break;
+                    case Id_profile:
+                        Intent Profile_intent = new Intent(MainActivity.this, LoginPage.class);
+                        startActivity(Profile_intent);
+                        break;
                     case Id_settings:
                         Intent setting_intent = new Intent(MainActivity.this, About_us.class);
                         startActivity(setting_intent);
                         break;
                     default:
+
 
                 }
             }
@@ -112,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
             public void onReselectItem(MeowBottomNavigation.Model item) {
                 switch (item.getId()) {
                     case Id_home:
+                        break;
+                    case Id_profile:
+                        Intent Profile_intent = new Intent(MainActivity.this, LoginPage.class);
+                        startActivity(Profile_intent);
                         break;
                     case Id_settings:
                         Intent setting_intent = new Intent(MainActivity.this, About_us.class);
