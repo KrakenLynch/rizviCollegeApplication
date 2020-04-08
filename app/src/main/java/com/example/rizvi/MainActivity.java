@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         noticesRecyclerView.setAdapter(noticesAdapter);
 
         //Bottom Navigation Bar
+
         meo = (MeowBottomNavigation) findViewById(R.id.BottomNavigationBar);
         meo.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home_black_24dp));
         meo.add(new MeowBottomNavigation.Model(2, R.drawable.ic_notifications_black_24dp));
@@ -111,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         }
                     case Id_settings:
-                        Intent setting_intent = new Intent(MainActivity.this, About_us.class);
+                        Intent setting_intent = new Intent(MainActivity.this, Settings.class);
                         startActivity(setting_intent);
                         break;
                     default:

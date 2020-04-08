@@ -74,10 +74,9 @@
             android:id="@+id/LoginProgessBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/LoginEmail_text"
-            android:layout_marginTop="10dp"
-            android:visibility="invisible"
-            />
+            android:layout_below="@+id/LoginPassword_text"
+            android:layout_marginTop="17dp"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/Login_btn"
@@ -97,27 +96,44 @@
 
         <TextView
             android:id="@+id/Account_Confirmation_txt"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't Have a Account..?"
             android:layout_below="@id/Login_btn"
-            android:textColor="@color/DeepRed"
+            android:textColor="@color/color_title"
+            android:layout_marginLeft="140dp"
             android:layout_marginTop="10dp"
             android:layout_centerVertical="true"
             android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/LoginRegister_txt"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
-            android:layout_below="@id/Account_Confirmation_txt"
+            android:layout_toRightOf="@id/Account_Confirmation_txt"
             android:textColor="@color/Orange"
-            android:layout_marginTop="3dp"
+            android:layout_below="@id/Login_btn"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
             android:textSize="18dp"
             android:layout_centerVertical="true"
             android:textAlignment="center"/>
 
+        <TextView
+            android:id="@+id/Forget_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/DeepRed"
+            android:textStyle="bold"
+            android:layout_below="@id/Account_Confirmation_txt"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="120dp"

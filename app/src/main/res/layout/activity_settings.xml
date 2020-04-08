@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/Abt_developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Developer"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+    <View
+        android:id="@+id/Abt_partition"
+        android:layout_below="@id/Abt_developer"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_below="@id/Abt_partition"
+        android:id="@+id/Upload_ProfileImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Profile Picture"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+    <View
+        android:id="@+id/UploadPI_partition"
+        android:layout_below="@id/Upload_ProfileImage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/Night_mode_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night Mode"
+        android:layout_below="@id/UploadPI_partition"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Abt_partition"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@id/Night_mode_txt"
+        android:checked="false"
+        android:switchMinWidth="56dp"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <View
+        android:id="@+id/NM_partition"
+        android:layout_below="@id/Night_mode_txt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/Logout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="logout"
+        android:layout_below="@id/NM_partition"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+</RelativeLayout>

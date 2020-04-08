@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    tools:context="Lists.AboutDeveloper">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/AD_Image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/myself"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/AD_Text"
+        android:layout_below="@id/AD_Image"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="Dastageer Sayed"
+        android:textSize="30dp"
+        android:textColor="@color/color_title"/>
+
+    <TextView
+        android:id="@+id/Occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AD_Text"
+        android:text="Software Developer"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/AD_EmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textColor="@color/color_title"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Occupation"
+        />
+
+    <TextView
+        android:id="@+id/AD_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dy.sayed18@gmail.com"
+        android:textColor="@color/color_title"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/AD_EmailLabel"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Occupation"
+        />
+
+    <TextView
+        android:id="@+id/AD_ContactLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact:"
+        android:textColor="@color/color_title"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/AD_Email"
+        />
+
+    <TextView
+        android:id="@+id/AD_Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7775804218"
+        android:textColor="@color/color_title"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/AD_ContactLabel"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/AD_Email"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/AD_ContactLabel"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:padding="5dp"
+            android:id="@+id/AD_FaceBook_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/facebook"
+            android:background="@null"
+            android:scaleType="fitXY"/>
+        <ImageButton
+            android:id="@+id/AD_Twitter_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/twitter"
+            android:padding="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/AD_Instagram_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:background="@null"
+            android:src="@drawable/instagram"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

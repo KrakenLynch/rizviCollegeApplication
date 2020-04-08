@@ -7,39 +7,65 @@
     android:layout_height="match_parent"
     tools:context=".ProfileDetails">
 
-
-    <LinearLayout
-        android:id="@+id/Profile_panel"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="@drawable/profile_second_layer"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profile_second_layer">
 
         <TextView
+            android:id="@+id/My_Profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Profile"
+            android:text="My Profile"
             android:textSize="30dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textAlignment="center"/>
 
         <ImageView
+            android:layout_below="@id/My_Profile"
             android:id="@+id/Profile_image"
-            android:layout_width="300px"
-            android:layout_height="300px"
-            android:layout_marginTop="50px"
+            android:layout_width="350px"
+            android:background="@drawable/circle_imageview"
+            android:layout_height="350px"
+            android:layout_marginTop="100px"
             android:layout_marginBottom="50px"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/ic_person_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/ChangePassword_btn"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_below="@id/My_Profile"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="37dp"
+            android:src="@drawable/ic_profile_edit_black_24dp"
+            android:layout_toLeftOf="@id/Profile_image"
+            android:background="@drawable/circle_button" />
+
+        <ImageButton
+            android:id="@+id/Settings_btn"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_below="@id/My_Profile"
+            android:layout_marginTop="75dp"
+            android:onClick="settings"
+            android:layout_marginLeft="37dp"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:layout_toRightOf="@id/Profile_image"
+            android:background="@drawable/circle_button" />
 
         <TextView
             android:id="@+id/Profile_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Profile_image"
+            android:textColor="@color/color_title"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -47,58 +73,34 @@
             android:id="@+id/Profile_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5px"
+            android:layout_marginBottom="30dp"
             android:text="Email"
-            android:textColor="@color/Yellow"
+            android:textColor="@color/color_title"
             android:textSize="18sp"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/Profile_Number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginTop="5px"
+            android:layout_marginRight="20dp"
             android:text="Phone Number"
-            android:textColor="@color/Yellow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_title"
             android:textSize="18sp"
             android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_below="@id/Profile_panel">
-
-        <Button
-            android:id="@+id/ChangePassword_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_rounded_button"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:padding="20dp"
-            android:text="Change Password"
-            android:textColor="@color/white"
-            android:layout_marginTop="35dp"/>
-
-        <Button
-            android:id="@+id/Logout_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_rounded_button"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:padding="20dp"
-            android:text="Logout"
-            android:onClick="logout"
-            android:textColor="@color/white"
-            android:layout_marginTop="35dp"/>
 
 
-    </LinearLayout>
+    </RelativeLayout>
+
+
+
 
 
 </RelativeLayout>

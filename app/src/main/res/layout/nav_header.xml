@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="176dp"
     android:orientation="vertical"
-    android:background="@drawable/rizvi_college_campus"
+    android:background="@drawable/background"
     android:padding="20dp"
     android:gravity="bottom"
     android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
