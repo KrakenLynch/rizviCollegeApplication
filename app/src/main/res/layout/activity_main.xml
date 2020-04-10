@@ -9,7 +9,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/Main_activity_content"
@@ -33,39 +33,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/notice_card"
-                android:layout_width="match_parent"
-                android:layout_height="252dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="30dp"
-                app:cardCornerRadius="10dp"
-                app:contentPadding="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/recyclerViewNotices"
-                        android:layout_marginBottom="10dp"
-                        android:text="Notices"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerViewNotices"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/events_card"
+                android:id="@+id/Notice_card"
                 android:layout_width="match_parent"
                 android:layout_height="252dp"
                 android:layout_marginLeft="30dp"
@@ -73,35 +41,87 @@
                 android:layout_marginRight="30dp"
                 app:cardCornerRadius="10dp">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Notice_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Notices"
+                        android:textColor="@color/color_title"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Notices_RecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/Notice_title"
+                        android:scrollbars="horizontal">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
             </androidx.cardview.widget.CardView>
 
-<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--                android:id="@+id/chat_floating_button"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="bottom|end"-->
-<!--                android:layout_margin="16dp"-->
-<!--                android:src="@drawable/ic_chat_black_24dp" />-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Events_card"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Placements_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Placements Partner"
+                        android:textColor="@color/color_title"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Placements_RecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/Placements_title"
+                        android:scrollbars="horizontal">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
             <com.etebarian.meowbottomnavigation.MeowBottomNavigation
                 android:id="@+id/BottomNavigationBar"
                 android:layout_width="match_parent"
-                android:layout_marginTop="15dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
                 app:mbn_backgroundBottomColor="@color/white"
                 app:mbn_countBackgroundColor="@color/DeepRed"
                 app:mbn_countTextColor="@color/white"
                 app:mbn_defaultIconColor="@color/color_title"
                 app:mbn_rippleColor="@color/white"
                 app:mbn_selectedIconColor="@color/Orange"
-                app:mbn_shadowColor="#1f212121"
-                />
+                app:mbn_shadowColor="#1f212121" />
 
         </LinearLayout>
 
 
     </ScrollView>
+
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

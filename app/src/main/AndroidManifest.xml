@@ -14,11 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="Lists.AboutDeveloper"></activity>
+        <activity android:name="Lists.AboutDeveloper" />
         <activity android:name=".Settings" />
-        <activity android:name=".ProfileDetails" />
-        <activity android:name=".RegisterPage" />
-        <activity android:name=".LoginPage" />
+        <activity android:name="Logins.ProfileDetails" />
+        <activity android:name="Logins.RegisterPage" />
+        <activity android:name="Logins.LoginPage" />
         <activity android:name=".ContactUs" />
         <activity android:name="Lists.AlumniSpeak" />
         <activity android:name="Lists.FamousAlumni" />

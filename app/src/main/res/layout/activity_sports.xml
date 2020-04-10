@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sports">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="4">
+
+        <!-- row 1 column 1-->
+        <Button
+            android:id="@+id/SportsClub_btn"
+            android:layout_width="206dp"
+            android:layout_height="206dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_card"
+            android:text="Rizvi Sports Club"
+            android:textAllCaps="false"
+            android:textColor="@color/color_title"
+            android:textSize="18dp"
+            android:textStyle="italic"/>
+
+        <!--        &lt;!&ndash; row 1 column 2&ndash;&gt;-->
+        <Button
+            android:id="@+id/SportsGallery_btn"
+            android:layout_width="206dp"
+            android:layout_height="206dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_card"
+            android:text="Sports Gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/color_title"
+            android:textSize="18dp"
+            android:textStyle="italic"/>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Lists.MScDetails"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/Msc_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@color/color_title"
+        android:layout_marginTop="30dp"
+        android:text="Rizvi college of Arts, Science and Commerce offers Programme of M.Sc by Research of University of Mumbai in the area of Chemistry.\n
+\n\nThe course structure, eligibility and selection criteria is as per University of Mumbai norms. The coaching for course work and the doctoral thesis work is done at the Institute under the able guidance of the Ph.D. and M.Sc. guide Dr. Shamsul Hussain And Dr. Rajendra Chaudhary. The Institute offers excellent research facilities in terms of statistical packages, online databases, online journals, etc.
+\n\nThe following students have enrolled for the M.Sc by Research program :-"/>
+
+    <TextView
+        android:id="@+id/Name1"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Ms. Sayed Sukayna F. Hussain"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/color_title"
+        android:layout_below="@id/Msc_txt"
+        />
+
+    <TextView
+        android:id="@+id/Name2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Mr. Firoz Meghani"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/color_title"
+        android:layout_below="@id/Name1"
+        />
+
+    <TextView
+        android:id="@+id/Name3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Ms. Umra Khan"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/color_title"
+        android:layout_below="@id/Name2"
+        />
+    <TextView
+        android:id="@+id/Name4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Mr. Yameen Khan"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/color_title"
+        android:layout_below="@id/Name3"
+        />
+
+
+</RelativeLayout>

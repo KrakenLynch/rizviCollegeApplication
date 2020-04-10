@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Lists.JuniorList">
+
+    <Button
+        android:id="@+id/Jr_Arts_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="Arts"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+       />
+
+    <Button
+        android:id="@+id/Jr_Commerce_list"
+        android:layout_width="match_parent"
+        android:layout_below="@id/Jr_Arts_list"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="Commerce"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+    android:id="@+id/Jr_Science_list"
+    android:layout_width="match_parent"
+    android:layout_below="@id/Jr_Commerce_list"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_list_btn"
+    android:text="Science"
+    android:textStyle="italic"
+    android:textSize="18dp"
+    android:layout_marginTop="15dp"
+    android:textColor="@color/white"
+    android:textAlignment="center"
+    tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Jr_mcvc_list"
+        android:layout_width="match_parent"
+        android:layout_below="@id/Jr_Science_list"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_list_btn"
+        android:text="M.C.V.C"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

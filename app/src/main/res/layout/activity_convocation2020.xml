@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="Campus.Convocation2020">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Convo_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Convocation_details"
+                android:textColor="@color/color_title"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Convo_BA_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_txt"
+                android:layout_marginTop="15dp"
+                android:background="@color/Yellow"
+                android:text="B.A List"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_BCom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_BA_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:text="B.com List"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_BMM_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_BCom_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/Orange_Brown"
+                android:text="B.M.M List"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_BMS_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_BMM_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/Reddish"
+                android:text="B.M.S List"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_BSc_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_BMS_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/Grey"
+                android:text="B.Sc List"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_MCom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_BSc_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/SeaGreen"
+                android:text="M.Com List"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_RConvo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_MCom_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/Violet"
+                android:text="Register for Convocation\nCeremony2020"
+                android:textAlignment="center"
+                android:textColor="@color/color_title"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_Toppers_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_RConvo_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/DeepRed"
+                android:text="Click to View Toppers List"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/Convo_Growns_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Convo_Toppers_btn"
+                android:layout_marginTop="15dp"
+                android:background="@color/DarkGreen"
+                android:text="Click to view Collection of Growns\n and Certificate"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

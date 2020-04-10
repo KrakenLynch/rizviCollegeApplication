@@ -7,34 +7,32 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import Adapters.InfrastructureAdapter;
 import Adapters.NoticesAdapter;
-import Models.NoticesModel;
+import Adapters.PlacementAdapter;
+import Campus.Infrastructure;
+import Logins.ProfileDetails;
+import Logins.RegisterPage;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private ViewFlipper v_flipper;
-    private List<NoticesModel> noticesModelList;
-    private RecyclerView noticesRecyclerView;
-    private NoticesAdapter noticesAdapter;
     private MeowBottomNavigation meo;
     FirebaseAuth fAuth;
 
@@ -45,6 +43,17 @@ public class MainActivity extends AppCompatActivity {
     private final static int Id_chatPanel = 4;
     private final static int Id_settings = 5;
 
+    //Notices
+    private RecyclerView NoticesRecyclerView;
+    private int[] NoticesImages;
+    private String[] NoticesLabels;
+    private String[] NoticesUrl;
+
+    //Placement
+    private RecyclerView PLRecyclerView;
+    private int[] PLImages;
+    private String[] PLLabels;
+    private String[] PLUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,19 +78,39 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Notices
-        noticesModelList = new ArrayList<>();
-        noticesModelList.add(new NoticesModel("Hello"));
-        noticesModelList.add(new NoticesModel("Hello1"));
-        noticesModelList.add(new NoticesModel("Hello2"));
-        noticesModelList.add(new NoticesModel("Hello3"));
+        NoticesRecyclerView = findViewById(R.id.Notices_RecyclerView);
+        NoticesImages = new int[]{R.drawable.pdf_logo,R.drawable.pdf_logo,R.drawable.marathon_image,R.drawable.pdf_logo,R.drawable.pdf_logo,R.drawable.pdf_logo,
+        R.drawable.pdf_logo};
+        NoticesLabels = new String[]{"BioInformatics Workshop Brochure","BioInformatics Registration\nForm","Saquib Rizvi Memorial Cancer Awareness Marathon",
+        "Admission fees payable by Demand Draft ","SY & TY in-house Admission Schedule","ATKT Examination Time Table March 2018","Lecture on E-Resources- Access and Use in the Library"};
+        NoticesUrl = new String[]{"http://www.rizvicollege.edu.in/pdf/Brochure_Workshop.pdf","http://www.rizvicollege.edu.in/pdf/Registration-of-workshop.pdf",
+        "https://www.townscript.com/e/saqib-rizvi-memorial-cancer-awareness-marathon-014301","https://redox-college.s3.ap-south-1.amazonaws.com/rizvi/2018/Jun/30/oS5Hlc6YO7xMp5XXMGFi.pdf",
+        "https://redox-college.s3.ap-south-1.amazonaws.com/rizvi/2018/Jun/23/RCsPsnMtTlm5sa2U1LvQ.pdf","https://redox-college.s3.ap-south-1.amazonaws.com/rizvi/2018/Mar/16/FWs6oZus8rr0FYryWdgY.pdf",
+                "https://redox-college.s3.ap-south-1.amazonaws.com/rizvi/2018/Jan/10/Jb88YoN5fO6QUeT7opcW.pdf"};
 
-        noticesRecyclerView = (RecyclerView) findViewById(R.id.recyclerViewNotices);
-        noticesAdapter = new NoticesAdapter(this, noticesModelList);
-        noticesRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        noticesRecyclerView.setAdapter(noticesAdapter);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        NoticesRecyclerView.setLayoutManager(linearLayoutManager);
+        NoticesAdapter noticesAdapter = new NoticesAdapter(MainActivity.this, NoticesImages,NoticesLabels, NoticesUrl);
+        NoticesRecyclerView.setAdapter(noticesAdapter);
+
+        //Placement
+        PLRecyclerView = findViewById(R.id.Placements_RecyclerView);
+        PLImages = new int[]{R.drawable.tata,R.drawable.l_and_t,R.drawable.wipro,R.drawable.cp_logo,R.drawable.igate,R.drawable.infosys,R.drawable.icici, R.drawable.arena,R.drawable.sign_por};
+        PLLabels = new String[]{"Tata Consultancy Services","L and T Infotech","Wipro","Capgemini India","IGate","Infosys","ICICI Prudential","Arena MultiMedia","Singapore Airlines"};
+        PLUrl = new String[]{"https://www.tcs.com","https://www.lntinfotech.com/","https://www.wipro.com/en-IN/","https://www.capgemini.com/in-en/","https://www.capgemini.com/in-en/",
+        "https://www.infosys.com/","https://www.icicipruamc.com/Registration?utm_source=google&utm_medium=cpc&utm_campaign=&utm_adgroup=&utm_term=icici%20prudential&utm_network=Search_g&utm_matchtype=e&utm_device=c&utm_placement=&utm_content=429067407746&utm_Adposition=&utm_location=9040243&utm_campaignid=8381103503&gclid=CjwKCAjwssD0BRBIEiwA-JP5rEdjv0xhl0UBRq1GaKZ9DNvn4Yy6pyEB3wkSMlL8gnm1Uh3NrLTCyxoCucgQAvD_BwE&gclsrc=aw.ds",
+        "https://m.arena-multimedia.com/campaign/animation-vfx1/index.aspx?Psource=Mobile%20Campaign&source=Brand_Campaign_mumbai&utm_medium=ppc&utm_campaign=Metro&utm_source=adwords&utm_term=arena%20multimedia&hsa_acc=4048179884&hsa_src=g&hsa_net=adwords&hsa_tgt=kwd-112261361&hsa_ver=3&hsa_ad=280856938452&hsa_grp=56764014677&hsa_kw=arena%20multimedia&hsa_cam=1469617160&hsa_mt=b&gclid=CjwKCAjwssD0BRBIEiwA-JP5rHPe1iepnl4knlXQHVANn6yNRSETfeMAAWk6M9-9CqAlqk4WAEbvlBoCOI0QAvD_BwE",
+        "https://www.singaporeair.com/en_UK/in/home?ds_rl=1012408&gclid=CjwKCAjwssD0BRBIEiwA-JP5rJVitEs3sSTqUMfecdQOGGdsCNw74-58Um8U5MXP1vVCiJ1xo1q5YBoCiwwQAvD_BwE&gclsrc=aw.ds#/book/bookflight"};
+
+        LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        PLRecyclerView.setLayoutManager(linearLayoutManager2);
+        PlacementAdapter placementAdapter = new PlacementAdapter(MainActivity.this, PLImages,PLLabels, PLUrl);
+        PLRecyclerView .setAdapter(placementAdapter);
+
+
+
 
         //Bottom Navigation Bar
-
         meo = (MeowBottomNavigation) findViewById(R.id.BottomNavigationBar);
         meo.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home_black_24dp));
         meo.add(new MeowBottomNavigation.Model(2, R.drawable.ic_notifications_black_24dp));

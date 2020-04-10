@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="Campus.Ncc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/NCC_title"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Ncc_title_string"
+                android:textColor="@color/color_title"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/NCCString1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ncc_1string"
+                android:layout_below="@id/NCC_title"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_title"/>
+
+            <TextView
+                android:id="@+id/NCCString2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ncc_2string"
+                android:layout_below="@id/NCCString1"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:background="@drawable/border"
+                android:textSize="20dp"
+                android:textColor="@color/color_title"/>
+
+            <TextView
+                android:id="@+id/NCCString3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ncc_3string"
+                android:layout_below="@id/NCCString2"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:background="@drawable/border"
+                android:textSize="20dp"
+                android:textColor="@color/color_title"/>
+
+            <TextView
+                android:id="@+id/NCCString4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ncc_4string"
+                android:layout_below="@id/NCCString3"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:background="@drawable/border"
+                android:textSize="20dp"
+                android:textColor="@color/color_title"/>
+
+            <TextView
+                android:id="@+id/NCCString5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ncc_string5"
+                android:layout_below="@id/NCCString4"
+                android:textSize="20dp"
+                android:textColor="@color/color_title"/>
+
+            <Button
+                android:id="@+id/Ncc_Report_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NCCString5"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="10dp"
+                android:text="Report"
+                android:textAllCaps="false" />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
