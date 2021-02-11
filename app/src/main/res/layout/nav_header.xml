@@ -9,8 +9,6 @@
     android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
     android:id="@+id/Account_Details_Header">
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

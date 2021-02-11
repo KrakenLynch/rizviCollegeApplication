@@ -39,7 +39,6 @@
             android:text="Create a Account"
             android:textSize="35dp"
             android:padding="10dp"
-
             android:layout_marginLeft="15dp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
